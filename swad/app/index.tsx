@@ -8,7 +8,7 @@ import Colors from "../constants/Colors";
 const index = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <ScrollView>
+      <ScrollView contentContainerStyle={{paddingBottom:40}}>
         <Categories />
         <Text  style={styles.header}>Top contender near your neighbour</Text>
         <Resturants />
@@ -23,6 +23,7 @@ export default index;
 
 const styles = StyleSheet.create({
   container: {
+   flex : 1,
     position: "absolute",
     backgroundColor: Colors.lightGrey,
     top: 125,
@@ -31,6 +32,7 @@ const styles = StyleSheet.create({
   header : {
     fontWeight : "bold",
     fontSize :20,
-    color :"#000"
+    color :"#000",
+    paddingHorizontal :10
   }
 });

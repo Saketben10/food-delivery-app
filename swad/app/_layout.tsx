@@ -56,7 +56,7 @@ export default function RootLayoutNav() {
               <TouchableOpacity>
                 <Ionicons
                   name="close-outline"
-                  size={20}
+                  size={30}
                   color={Colors.primary}
                 />
               </TouchableOpacity>
